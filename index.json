@@ -1,0 +1,469 @@
+{
+  "schema_version": 1,
+  "adapters": [
+    {
+      "domain": "bench",
+      "primary_namespace": "bench",
+      "title": "LDGR bench adapter",
+      "aliases": [],
+      "classification": "commercial",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "prerelease",
+          "core_compatibility": ">=0.1.0, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-linux-aarch64.tar.gz",
+              "archive_root": "bench-0.1.0",
+              "binary": "ldgr-bench",
+              "sha256": "20b9d89083707712d8e0a977636f527da466a6724c8777a2bdf5389bac90a542",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-linux-x86_64.tar.gz",
+              "archive_root": "bench-0.1.0",
+              "binary": "ldgr-bench",
+              "sha256": "5c8cc06b86265cbec9ab3a9477bdcd8bf5ecb77b4f416e315b193e82e80ea012",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-macos-aarch64.tar.gz",
+              "archive_root": "bench-0.1.0",
+              "binary": "ldgr-bench",
+              "sha256": "45c31a70b067bd273d47ccc62f094e629236b00198827a86a49d8e07e01d8243",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-macos-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-macos-x86_64.tar.gz",
+              "archive_root": "bench-0.1.0",
+              "binary": "ldgr-bench",
+              "sha256": "66b26e11f8dfc65e196aa9a9b2ff8d614fe788959a3a3b9c69ece3d9c47e66cc",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-macos-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-windows-x86_64.tar.gz",
+              "archive_root": "bench-0.1.0",
+              "binary": "ldgr-bench.exe",
+              "sha256": "8f90f9f5758ed2c0695264be97b3d40f9698493316b70b57bd486aa9c872de25",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/bench-v0.1.0/bench-0.1.0-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "code",
+      "primary_namespace": "code",
+      "title": "LDGR code adapter",
+      "aliases": [],
+      "classification": "commercial",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.0, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-linux-aarch64.tar.gz",
+              "archive_root": "code-0.1.0",
+              "binary": "ldgr-code",
+              "sha256": "6198abbc15d82cfe6af272524c9e360e29eb6030892950a20f1acb3b88a7385e",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-linux-x86_64.tar.gz",
+              "archive_root": "code-0.1.0",
+              "binary": "ldgr-code",
+              "sha256": "ec2927d7f2e142b1da53422e297ce538c403adf5a31ec791d978825ae81fdc68",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-macos-aarch64.tar.gz",
+              "archive_root": "code-0.1.0",
+              "binary": "ldgr-code",
+              "sha256": "1179d8018536af6a65d20fd3b3ffb95c56b3057b26276fc619f684d2e8d3fddf",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-macos-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-macos-x86_64.tar.gz",
+              "archive_root": "code-0.1.0",
+              "binary": "ldgr-code",
+              "sha256": "55c4bef78766cedb4cb6cb14f644fe57299641fa9ed6a9a5f10651a0c63556b2",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-macos-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-windows-x86_64.tar.gz",
+              "archive_root": "code-0.1.0",
+              "binary": "ldgr-code.exe",
+              "sha256": "c60a6ad4c0e6091305b24357c5a3dd0200b0d9b18c6553ea8a48a9146ec045ac",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/code-v0.1.0/code-0.1.0-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "conduct",
+      "primary_namespace": "conduct",
+      "title": "LDGR conduct adapter",
+      "aliases": [],
+      "classification": "commercial",
+      "releases": [
+        {
+          "version": "0.1.4",
+          "channel": "prerelease",
+          "core_compatibility": ">=0.1.0, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-linux-aarch64.tar.gz",
+              "archive_root": "conduct-0.1.4",
+              "binary": "ldgr-conduct",
+              "sha256": "a7fb43ef2470b6d748dfe9f0a12617b6f35b50d53b64173347fb7479952183eb",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-linux-x86_64.tar.gz",
+              "archive_root": "conduct-0.1.4",
+              "binary": "ldgr-conduct",
+              "sha256": "11cc2e2d01929076e8bd8c10900b7e3dca8422e9fc7bf5a6201a55bfbb16f6f2",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-macos-aarch64.tar.gz",
+              "archive_root": "conduct-0.1.4",
+              "binary": "ldgr-conduct",
+              "sha256": "fccc21070c46637f8fac619adc1d822b305f039011b3adb6f21f202ad373a470",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-macos-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-macos-x86_64.tar.gz",
+              "archive_root": "conduct-0.1.4",
+              "binary": "ldgr-conduct",
+              "sha256": "54d03d1f4e31e745bcc30a8861687e204fc452bc65234d194eabe9537bb6bf4b",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-macos-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-windows-x86_64.tar.gz",
+              "archive_root": "conduct-0.1.4",
+              "binary": "ldgr-conduct.exe",
+              "sha256": "88ff94bf4bb2a073abe71484c21aeab72afa6b7415e79dcd1749f165f81b68fe",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/conduct-v0.1.4/conduct-0.1.4-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "evidence",
+      "primary_namespace": "evidence",
+      "title": "LDGR evidence adapter",
+      "aliases": [],
+      "classification": "open_source",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "prerelease",
+          "core_compatibility": ">=0.1.0, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-linux-aarch64.tar.gz",
+              "archive_root": "evidence-0.1.0",
+              "binary": "ldgr-evidence",
+              "sha256": "029f6e6bbd5ab7daa1ece444439585f9b5e7924cef82a42c1b85768330b2cb56",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-linux-x86_64.tar.gz",
+              "archive_root": "evidence-0.1.0",
+              "binary": "ldgr-evidence",
+              "sha256": "9e16e81a376a5131845072116c9b32b63c73e0cb3df3bfb25025e30c0f582839",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-macos-aarch64.tar.gz",
+              "archive_root": "evidence-0.1.0",
+              "binary": "ldgr-evidence",
+              "sha256": "c757ee84ac16935060df33b728a57a80a2cf39ca9980364c67cd441e18b75d33",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-macos-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-macos-x86_64.tar.gz",
+              "archive_root": "evidence-0.1.0",
+              "binary": "ldgr-evidence",
+              "sha256": "d9bef536d07d6c370608e975eb55fe7f0b7bdbf5ac670fba782191e5a28e005e",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-macos-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-windows-x86_64.tar.gz",
+              "archive_root": "evidence-0.1.0",
+              "binary": "ldgr-evidence.exe",
+              "sha256": "4af946308e0cba94251321f386ce38b3e88bda7ace0fc55ec92ebf9acb710e59",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/evidence-v0.1.0/evidence-0.1.0-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "explore",
+      "primary_namespace": "explore",
+      "title": "LDGR explore adapter",
+      "aliases": [],
+      "classification": "commercial",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "prerelease",
+          "core_compatibility": ">=0.1.0, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-linux-aarch64.tar.gz",
+              "archive_root": "explore-0.1.0",
+              "binary": "ldgr-explore",
+              "sha256": "21de5749ad7eaa8020fff19f6039ea4d64148535e6300eba89f96df409a00b45",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-linux-x86_64.tar.gz",
+              "archive_root": "explore-0.1.0",
+              "binary": "ldgr-explore",
+              "sha256": "ba6bc9e7e5e3d1d74196a1640e0c85b646971959a021a9df011c4f06a5131e6d",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-macos-aarch64.tar.gz",
+              "archive_root": "explore-0.1.0",
+              "binary": "ldgr-explore",
+              "sha256": "4f72a004d4981ad3e4b906b7d8161ad02dc0476503b8b2b4be4ed004e9ea0ce4",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-macos-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-macos-x86_64.tar.gz",
+              "archive_root": "explore-0.1.0",
+              "binary": "ldgr-explore",
+              "sha256": "5b9c3f6d9a5f07d2006fc2e77cc8e06c0ec76f32e579c013dc9e78c959a9855e",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-macos-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-windows-x86_64.tar.gz",
+              "archive_root": "explore-0.1.0",
+              "binary": "ldgr-explore.exe",
+              "sha256": "e30a3cc2ca987ac1e1b538868f272492f0394e4b69d76ed747bd8d4ca62c8647",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/explore-v0.1.0/explore-0.1.0-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "programbench",
+      "primary_namespace": "programbench",
+      "title": "ProgramBench historical reproduction adapter",
+      "aliases": [],
+      "classification": "open_source",
+      "source_url": "https://github.com/hydra-dynamix/ldgr-programbench",
+      "releases": [
+        {
+          "version": "0.1.0",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.0, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-linux-aarch64.tar.gz",
+              "archive_root": "ldgr-programbench-0.1.0",
+              "binary": "ldgr-programbench",
+              "sha256": "017ae511c3856ae1f153590ad66ba93190b6f67d3957bab029999fb8ea3b6d98",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-linux-x86_64.tar.gz",
+              "archive_root": "ldgr-programbench-0.1.0",
+              "binary": "ldgr-programbench",
+              "sha256": "f10e19cc21116e1f8aadfbb2a1d67f7603592bbc881f2c2a59101d305eaa42fb",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-macos-aarch64.tar.gz",
+              "archive_root": "ldgr-programbench-0.1.0",
+              "binary": "ldgr-programbench",
+              "sha256": "0174cf383a15ea60901298b3e62f4a35bd3e1dde0178b8a4515b5ee3851018ae",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-macos-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-macos-x86_64.tar.gz",
+              "archive_root": "ldgr-programbench-0.1.0",
+              "binary": "ldgr-programbench",
+              "sha256": "0796f451861bea0abac9fccc883cb79454738d95134184f052ad2babfac69255",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-macos-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-windows-x86_64.tar.gz",
+              "archive_root": "ldgr-programbench-0.1.0",
+              "binary": "ldgr-programbench.exe",
+              "sha256": "83ebb139ba1283147d6ba0c36a822b9ebe399fee916ccaae86efa2f978feb601",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/programbench-v0.1.0/ldgr-programbench-0.1.0-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "research",
+      "primary_namespace": "research",
+      "title": "Research adapter",
+      "aliases": [],
+      "classification": "open_source",
+      "source_url": "https://github.com/hydra-dynamix/ldgr-research",
+      "releases": [
+        {
+          "version": "0.1.4",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.0, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-linux-aarch64.tar.gz",
+              "archive_root": "ldgr-research-0.1.4",
+              "binary": "ldgr-research",
+              "sha256": "a3d41a5c013c8b314917e622fc346a9db0b338fd7bc378c5467ae57310007f69",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-linux-x86_64.tar.gz",
+              "archive_root": "ldgr-research-0.1.4",
+              "binary": "ldgr-research",
+              "sha256": "cd6019fb83812abc5a4b72d328229a8e93fe7ef0a48933bed42f738a69ad9736",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-macos-aarch64.tar.gz",
+              "archive_root": "ldgr-research-0.1.4",
+              "binary": "ldgr-research",
+              "sha256": "cc84f25e9d801819c75a70e1514e07a99c8eeead62df5d0293bf97f3c922da48",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-macos-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "macos-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-macos-x86_64.tar.gz",
+              "archive_root": "ldgr-research-0.1.4",
+              "binary": "ldgr-research",
+              "sha256": "4ece26744c02d814f9f217675bb00715b76bf3e36e9ef1e4cce54c4ceee8b784",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-macos-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-windows-x86_64.tar.gz",
+              "archive_root": "ldgr-research-0.1.4",
+              "binary": "ldgr-research.exe",
+              "sha256": "ad4ae490c9dca6ed13b455233a02c37d790bc776a08c8f4a2221b71e55eddb44",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
