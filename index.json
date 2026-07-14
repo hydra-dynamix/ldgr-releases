@@ -9,6 +9,43 @@
       "classification": "commercial",
       "releases": [
         {
+          "version": "0.1.1",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/bench-0.1.1-linux-aarch64.tar.gz",
+              "archive_root": "bench-0.1.1",
+              "binary": "ldgr-bench",
+              "sha256": "ef110860f8c3631fe19841645b3b819e891ce773306e5396886274a8fd077676",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/bench-0.1.1-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/bench-0.1.1-linux-x86_64.tar.gz",
+              "archive_root": "bench-0.1.1",
+              "binary": "ldgr-bench",
+              "sha256": "b1248650eb5cafaa0fb3fe1165922d08638f4197553fdf15ece6a9f671945f49",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/bench-0.1.1-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/bench-0.1.1-windows-x86_64.tar.gz",
+              "archive_root": "bench-0.1.1",
+              "binary": "ldgr-bench.exe",
+              "sha256": "080b38317daf722d2282631945c7636508b4edc2c2dd4cbb049bd56c6b11a459",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/bench-0.1.1-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        },
+        {
           "version": "0.1.0",
           "channel": "prerelease",
           "core_compatibility": ">=0.1.0, <0.2.0",
@@ -74,6 +111,43 @@
       "aliases": [],
       "classification": "commercial",
       "releases": [
+        {
+          "version": "0.1.1",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/code-0.1.1-linux-aarch64.tar.gz",
+              "archive_root": "code-0.1.1",
+              "binary": "ldgr-code",
+              "sha256": "dc98e0be2c9b82aaaace1bda15e11d1f86944f023bd1498bc3da47fc71138a35",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/code-0.1.1-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/code-0.1.1-linux-x86_64.tar.gz",
+              "archive_root": "code-0.1.1",
+              "binary": "ldgr-code",
+              "sha256": "088624b379c81ef7323458c2ae1dbbd4a7fbf3b1225bc724776dd0a3b7a54518",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/code-0.1.1-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/code-0.1.1-windows-x86_64.tar.gz",
+              "archive_root": "code-0.1.1",
+              "binary": "ldgr-code.exe",
+              "sha256": "aebe357a20f8bc60b86f040ceff25d863df6003f4cc5f34464d56b734d1a7570",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/code-0.1.1-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "channel": "stable",
@@ -141,6 +215,43 @@
       "classification": "commercial",
       "releases": [
         {
+          "version": "0.1.5",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/conduct-0.1.5-linux-aarch64.tar.gz",
+              "archive_root": "conduct-0.1.5",
+              "binary": "ldgr-conduct",
+              "sha256": "b44b1af10323a5c038f1a53d42838700d21c82dcfc8a37e7057c88ce8088947e",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/conduct-0.1.5-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/conduct-0.1.5-linux-x86_64.tar.gz",
+              "archive_root": "conduct-0.1.5",
+              "binary": "ldgr-conduct",
+              "sha256": "fd6fa7ed9f7ee39493ef03e7cf05fd45bd46ec9d172a0969d7957dc1d36b5301",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/conduct-0.1.5-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/conduct-0.1.5-windows-x86_64.tar.gz",
+              "archive_root": "conduct-0.1.5",
+              "binary": "ldgr-conduct.exe",
+              "sha256": "8d7d95cb834d8b70435a3519a28885ce0bff8b41c19dc27beb88872f3e8b8fa2",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/conduct-0.1.5-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        },
+        {
           "version": "0.1.4",
           "channel": "prerelease",
           "core_compatibility": ">=0.1.0, <0.2.0",
@@ -207,6 +318,43 @@
       "classification": "open_source",
       "releases": [
         {
+          "version": "0.1.1",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/evidence-0.1.1-linux-aarch64.tar.gz",
+              "archive_root": "evidence-0.1.1",
+              "binary": "ldgr-evidence",
+              "sha256": "d0f28fc31fdbf09e0e3e70541c4c6cdae7a3d06d24c861bc49697d72990503d1",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/evidence-0.1.1-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/evidence-0.1.1-linux-x86_64.tar.gz",
+              "archive_root": "evidence-0.1.1",
+              "binary": "ldgr-evidence",
+              "sha256": "559053157e797147b807ef4e5e125098d04cdc6bd4f6f469090ec47bb0f68310",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/evidence-0.1.1-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/evidence-0.1.1-windows-x86_64.tar.gz",
+              "archive_root": "evidence-0.1.1",
+              "binary": "ldgr-evidence.exe",
+              "sha256": "acc492589a471695197f3ba4fc7e53d9ffd780c1cec6c810acd579df4cc40add",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/evidence-0.1.1-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        },
+        {
           "version": "0.1.0",
           "channel": "prerelease",
           "core_compatibility": ">=0.1.0, <0.2.0",
@@ -266,12 +414,96 @@
       ]
     },
     {
+      "domain": "example",
+      "primary_namespace": "example",
+      "title": "LDGR example adapter",
+      "aliases": [],
+      "classification": "open_source",
+      "releases": [
+        {
+          "version": "0.1.5",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/example-0.1.5-linux-aarch64.tar.gz",
+              "archive_root": "example-0.1.5",
+              "binary": "ldgr-example-adapter",
+              "sha256": "5af2d6f0982a6d55ecaa0682a38d37bc92059c552d9b9fb9217cecd84cbbe89d",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/example-0.1.5-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/example-0.1.5-linux-x86_64.tar.gz",
+              "archive_root": "example-0.1.5",
+              "binary": "ldgr-example-adapter",
+              "sha256": "5d9d2da212a3ce432b9946e57fd6ff8d29a6c308641cb98ce65d88737fb0839c",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/example-0.1.5-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/example-0.1.5-windows-x86_64.tar.gz",
+              "archive_root": "example-0.1.5",
+              "binary": "ldgr-example-adapter.exe",
+              "sha256": "52b21a187c6f56d773f0fdd66ccfdbafa511f5ae37163b6000c5ab24e43b0aae",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/example-0.1.5-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ],
+      "source_url": "https://github.com/hydra-dynamix/ldgr-example-adapter"
+    },
+    {
       "domain": "explore",
       "primary_namespace": "explore",
       "title": "LDGR explore adapter",
       "aliases": [],
       "classification": "commercial",
       "releases": [
+        {
+          "version": "0.1.1",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/explore-0.1.1-linux-aarch64.tar.gz",
+              "archive_root": "explore-0.1.1",
+              "binary": "ldgr-explore",
+              "sha256": "7eafc584f679ffd9530579df9373c80bf2d26cca5a73e4b4306db47f5bc30f94",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/explore-0.1.1-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/explore-0.1.1-linux-x86_64.tar.gz",
+              "archive_root": "explore-0.1.1",
+              "binary": "ldgr-explore",
+              "sha256": "f212165cb01d1b18d383b78e30671079c41baae5b20109cd69f50512a5c24b31",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/explore-0.1.1-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/explore-0.1.1-windows-x86_64.tar.gz",
+              "archive_root": "explore-0.1.1",
+              "binary": "ldgr-explore.exe",
+              "sha256": "8c600b9ea5926b2f9955f4c50dd5dee14bf9cecac919d24793c02bf83221723c",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/explore-0.1.1-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        },
         {
           "version": "0.1.0",
           "channel": "prerelease",
@@ -340,6 +572,43 @@
       "source_url": "https://github.com/hydra-dynamix/ldgr-programbench",
       "releases": [
         {
+          "version": "0.1.1",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/programbench-0.1.1-linux-aarch64.tar.gz",
+              "archive_root": "programbench-0.1.1",
+              "binary": "ldgr-programbench",
+              "sha256": "0eb566493b96f179f461ac32fe169bd651d97a0d4de16ce4732527e1a58618c8",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/programbench-0.1.1-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/programbench-0.1.1-linux-x86_64.tar.gz",
+              "archive_root": "programbench-0.1.1",
+              "binary": "ldgr-programbench",
+              "sha256": "83b3b06e260320c7fbd96633f91f84bf2a096ec50569341f09c847a1a63b3a32",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/programbench-0.1.1-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/programbench-0.1.1-windows-x86_64.tar.gz",
+              "archive_root": "programbench-0.1.1",
+              "binary": "ldgr-programbench.exe",
+              "sha256": "6077a5602cb3b4f18d1c6eb47a4ebe3b169731e9584729125a88d2027194e5e8",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/programbench-0.1.1-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        },
+        {
           "version": "0.1.0",
           "channel": "stable",
           "core_compatibility": ">=0.1.0, <0.2.0",
@@ -399,6 +668,52 @@
       ]
     },
     {
+      "domain": "recall",
+      "primary_namespace": "recall",
+      "title": "LDGR recall adapter",
+      "aliases": [],
+      "classification": "commercial",
+      "releases": [
+        {
+          "version": "0.1.1",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/recall-0.1.1-linux-aarch64.tar.gz",
+              "archive_root": "recall-0.1.1",
+              "binary": "ldgr-recall",
+              "sha256": "a094c972c2629e1daea5c9561523ba3a48b2ec495bf22135024e1107510bef98",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/recall-0.1.1-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/recall-0.1.1-linux-x86_64.tar.gz",
+              "archive_root": "recall-0.1.1",
+              "binary": "ldgr-recall",
+              "sha256": "e98aaa26e0188533dcfb0f688b7c477affe53e32801dd845bd2f7fa80d473d26",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/recall-0.1.1-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/recall-0.1.1-windows-x86_64.tar.gz",
+              "archive_root": "recall-0.1.1",
+              "binary": "ldgr-recall.exe",
+              "sha256": "a68c03346fb69d261c233bb53f03367d23c24569ef67724ac43ba82210bb132a",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/recall-0.1.1-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "domain": "research",
       "primary_namespace": "research",
       "title": "Research adapter",
@@ -406,6 +721,43 @@
       "classification": "open_source",
       "source_url": "https://github.com/hydra-dynamix/ldgr-research",
       "releases": [
+        {
+          "version": "0.1.5",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/research-0.1.5-linux-aarch64.tar.gz",
+              "archive_root": "research-0.1.5",
+              "binary": "ldgr-research",
+              "sha256": "3f90f8b7aa0dd86932f6b01e756416f26f1bb85d1a56ce5cb3a4a319ea216298",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/research-0.1.5-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/research-0.1.5-linux-x86_64.tar.gz",
+              "archive_root": "research-0.1.5",
+              "binary": "ldgr-research",
+              "sha256": "334d28e4d8a4bf5dd1b64d72336efb1717cbfc3d8487635cb6f99df23ea49b30",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/research-0.1.5-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/research-0.1.5-windows-x86_64.tar.gz",
+              "archive_root": "research-0.1.5",
+              "binary": "ldgr-research.exe",
+              "sha256": "825be10c51be8100dcc8f5efe55e09981fd1df6c5fb0bb3ccaf28e4d4f5ff29e",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/research-0.1.5-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        },
         {
           "version": "0.1.4",
           "channel": "stable",
@@ -458,6 +810,52 @@
               "binary": "ldgr-research.exe",
               "sha256": "ad4ae490c9dca6ed13b455233a02c37d790bc776a08c8f4a2221b71e55eddb44",
               "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/research-v0.1.4/ldgr-research-0.1.4-windows-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "domain": "security",
+      "primary_namespace": "security",
+      "title": "LDGR security adapter",
+      "aliases": [],
+      "classification": "commercial",
+      "releases": [
+        {
+          "version": "0.1.1",
+          "channel": "stable",
+          "core_compatibility": ">=0.1.9, <0.2.0",
+          "platforms": [
+            {
+              "platform": "linux-aarch64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/security-0.1.1-linux-aarch64.tar.gz",
+              "archive_root": "security-0.1.1",
+              "binary": "ldgr-security",
+              "sha256": "cee6d2044272a82a83ff6bc9003f1b9e02e002a3dd237ae8498fc7788ef056c6",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/security-0.1.1-linux-aarch64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "linux-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/security-0.1.1-linux-x86_64.tar.gz",
+              "archive_root": "security-0.1.1",
+              "binary": "ldgr-security",
+              "sha256": "21dba9489badb1c986a83a4d817eace41e6f98a6d9aea9322d6e60e0c6b2a183",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/security-0.1.1-linux-x86_64.tar.gz.sig",
+              "signing_key_id": "ldgr-release-2026-01",
+              "resource_manifest": "adapter-resources.json"
+            },
+            {
+              "platform": "windows-x86_64",
+              "asset_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/security-0.1.1-windows-x86_64.tar.gz",
+              "archive_root": "security-0.1.1",
+              "binary": "ldgr-security.exe",
+              "sha256": "92cb14d0cfb90741b9cf1df51a6a00cca394f407e4fdc426c481d4c16696e853",
+              "signature_url": "https://github.com/hydra-dynamix/ldgr-releases/releases/download/database-contract-2d59299bf073/security-0.1.1-windows-x86_64.tar.gz.sig",
               "signing_key_id": "ldgr-release-2026-01",
               "resource_manifest": "adapter-resources.json"
             }
