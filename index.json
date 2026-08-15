@@ -1180,7 +1180,7 @@
         {
           "version": "0.1.6",
           "channel": "stable",
-          "core_compatibility": ">=0.1.13, <0.1.14",
+          "core_compatibility": ">=0.1.13, <0.1.15",
           "platforms": [
             {
               "platform": "linux-aarch64",
