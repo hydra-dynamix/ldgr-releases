@@ -1,0 +1,104 @@
+name: Publish adapter catalog atomically
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Draft hydra-dynamix/ldgr-releases tag containing a complete adapter matrix
+        required: true
+        type: string
+      publish:
+        description: Activate the release and catalog after all gates pass
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: adapter-catalog-publication
+  cancel-in-progress: false
+
+jobs:
+  gate-and-publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      CATALOG_SIGNING_KEY_PEM: ${{ secrets.LDGR_ADAPTER_CATALOG_SIGNING_KEY_PEM }}
+      CATALOG_SIGNING_KEY_ID: ${{ vars.LDGR_ADAPTER_CATALOG_SIGNING_KEY_ID || 'ldgr-release-2026-01' }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Download the complete draft candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f core-index.json
+          mkdir candidate
+          gh release download "${{ inputs.release_tag }}" --dir candidate \
+            --pattern '*.tar.gz' --pattern '*.tar.gz.sig' --pattern '*.index-entry.json'
+          test "$(find candidate -name '*.tar.gz' | wc -l)" -gt 0
+          test "$(find candidate -name '*.tar.gz.sig' | wc -l)" -eq "$(find candidate -name '*.tar.gz' | wc -l)"
+          test "$(find candidate -name '*.index-entry.json' | wc -l)" -eq "$(find candidate -name '*.tar.gz' | wc -l)"
+      - name: Generate and validate the complete schema-v2 catalog
+        shell: bash
+        run: |
+          set -euo pipefail
+          fragments=()
+          while IFS= read -r path; do fragments+=(--fragment "$path"); done < <(find candidate -name '*.index-entry.json' -print | sort)
+          existing=()
+          if [[ "$(jq -r .schema_version index.json)" == 2 ]]; then
+            existing=(--existing-index index.json)
+          fi
+          python3 scripts/adapter-release-metadata.py merge \
+            "${fragments[@]}" "${existing[@]}" --archives candidate \
+            --keyring release-keyring.json --core-catalog core-index.json \
+            --output candidate/index.json
+          python3 scripts/adapter-release-metadata.py validate \
+            --index candidate/index.json --core-catalog core-index.json
+      - name: Sign the exact canonical catalog candidate
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$CATALOG_SIGNING_KEY_PEM"
+          printf '%s' "$CATALOG_SIGNING_KEY_PEM" > candidate/catalog-key.pem
+          python3 - <<'PY'
+          import json,pathlib
+          value=json.load(open('candidate/index.json'))
+          pathlib.Path('candidate/index.canonical.json').write_bytes(json.dumps(value,sort_keys=True,separators=(',',':')).encode())
+          PY
+          openssl pkeyutl -sign -rawin -inkey candidate/catalog-key.pem \
+            -in candidate/index.canonical.json -out candidate/index.sig.raw
+          signature="$(openssl base64 -A -in candidate/index.sig.raw)"
+          jq -n --arg algorithm Ed25519 --arg key_id "$CATALOG_SIGNING_KEY_ID" \
+            --arg signature "$signature" \
+            '{algorithm:$algorithm,key_id:$key_id,signature:$signature}' > candidate/index.json.sig
+          rm -f candidate/catalog-key.pem candidate/index.sig.raw candidate/index.canonical.json
+      - name: Activate release assets, then catalog in one repository commit
+        if: inputs.publish
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The release may become visible before the catalog, never the reverse.
+          # The single catalog commit is the activation point used by clients.
+          gh release edit "${{ inputs.release_tag }}" --draft=false
+          cp candidate/index.json index.json
+          cp candidate/index.json.sig index.json.sig
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.json index.json.sig
+          git diff --cached --check
+          git commit -m "release(adapters): publish ${{ inputs.release_tag }} compatibility v2"
+          git push origin HEAD:main
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gated-adapter-catalog-${{ inputs.release_tag }}
+          path: |
+            candidate/index.json
+            candidate/index.json.sig
+          if-no-files-found: error
