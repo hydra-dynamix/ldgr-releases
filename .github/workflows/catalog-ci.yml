@@ -1,0 +1,44 @@
+name: Adapter catalog compatibility gate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Test publication gate fixtures
+        run: python3 scripts/test_adapter_release_metadata.py
+      - name: Evaluate every stable v2 artifact against released Core profiles
+        shell: bash
+        run: |
+          set -euo pipefail
+          schema="$(python3 -c 'import json; print(json.load(open("index.json"))["schema_version"])')"
+          if [[ "$schema" == "1" ]]; then
+            echo "Legacy schema-v1 catalog retained read-only until the first atomic v2 publication."
+            if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+              git fetch --no-tags origin main
+              base=origin/main
+            else
+              base="${{ github.event.before }}"
+            fi
+            if [[ -n "$base" && "$base" != "0000000000000000000000000000000000000000" ]]; then
+              git diff --exit-code "$base" -- index.json || {
+                echo "::error::new schema-v1 catalog edits are forbidden; publish a complete compatibility-v2 candidate" >&2
+                exit 1
+              }
+            fi
+            exit 0
+          fi
+          test -f core-index.json
+          python3 scripts/adapter-release-metadata.py validate \
+            --index index.json --core-catalog core-index.json

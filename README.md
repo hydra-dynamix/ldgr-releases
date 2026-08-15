@@ -19,4 +19,25 @@ the backed-up schema-v1 migration fix in Core and in adapters linked to Core.
 when verifying detached signatures. `index.json` is the canonical adapter
 catalog consumed by `ldgr adapter install <adapter>`.
 
+## Compatibility-v2 publication
+
+The schema-v1 catalog above is read-only legacy state. New adapter releases are
+published only as a complete schema-v2 candidate:
+
+1. each platform workflow emits an `ldgr.adapter-release-fragment.v2` envelope
+   from its generated `adapter-compatibility.json` sidecar;
+2. `.github/workflows/publish-adapter-catalog.yml` verifies all five archives,
+   signatures, checksums, embedded sidecars, and platform entries;
+3. every stable variant is evaluated against every stable compatibility profile
+   in the signed Core catalog, including overlap checks for same-version
+   variants; and
+4. the draft release is made available before one commit atomically replaces
+   `index.json` and `index.json.sig`. The catalog commit is the client activation
+   point, so clients never observe metadata for unavailable assets.
+
+`core_compatibility` package-version ranges are forbidden in schema v2. Core
+patches and additive schemas require no adapter metadata edit; selection uses
+protocol epochs, minimum Core schema, capabilities, and registered central
+components generated from reviewed descriptors.
+
 This repository must contain release metadata and binary assets only. Commercial adapter source code must not be published here.
